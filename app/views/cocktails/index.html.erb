@@ -1,11 +1,11 @@
 <h1>Cocktails#index</h1>
 
 <table>
-  <tr>
-    <% @cocktails.each do |cocktail| %>
-      <td>
-        <%= cocktail.name %>
-      </td>
-    <% end %>
-  </tr>
+  <% @cocktails.each do |cocktail| %>
+    <tr>
+      <td><%= link_to cocktail.name, cocktail_path(cocktail) %></td>
+    </tr>
+  <% end %>
 </table>
+
+<%= link_to 'Create new cocktail', new_cocktail_path, { class: 'btn btn-primary' } %>
