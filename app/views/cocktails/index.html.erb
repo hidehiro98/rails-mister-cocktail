@@ -1,0 +1,11 @@
+<h1>Cocktails#index</h1>
+
+<table>
+  <tr>
+    <% @cocktails.each do |cocktail| %>
+      <td>
+        <%= cocktail.name %>
+      </td>
+    <% end %>
+  </tr>
+</table>
