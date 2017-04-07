@@ -3,8 +3,12 @@ class DosesController < ApplicationController
 
   def new
     @dose = Dose.new
-    @ingredients = Ingredient.all
   end
+
+  # for my try
+  # def new2
+  #   @dose = Dose.new
+  # end
 
   def create
     @dose = Dose.new(dose_params)
@@ -18,15 +22,20 @@ class DosesController < ApplicationController
 
   def destroy
     @dose = Dose.find(params[:id])
+    @cocktail = @dose.cocktail
     @dose.destroy
 
-    redirect_to cocktail_path(@dose.cocktail)
+    redirect_to cocktail_path(@cocktail)
+
+    # it is dangerous
+    # redirect_to cocktail_path(@dose.cocktail)
   end
 
   private
 
   def dose_params
-    params.require(:dose).permit(:description, :cocktail_id, :ingredient_id)
+    # no need for cocktail_id and cocktail because cocktail is already in the DB
+    params.require(:dose).permit(:description, :ingredient_id)
   end
 
   def set_cocktail

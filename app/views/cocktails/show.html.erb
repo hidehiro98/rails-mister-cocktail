@@ -1,15 +1,13 @@
 <h1><%= @cocktail.name %></h1>
 
-<table>
-  <tr>
-    <th>Description</th>
-    <th>Ingredient</th>
-  </tr>
+<ul>
   <% @cocktail.doses.each do |dose| %>
-    <tr>
-      <td><%= dose.description %></td>
-      <td><%= dose.ingredient.name %></td>
-      <td><%= link_to 'Delete', dose_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+    <li>
+      <%= dose.description %>
+      <%= dose.ingredient.name %>
+      <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
   <% end %>
-</table>
+</ul>
+
+<%= link_to 'Create new dose', new_cocktail_dose_path(@cocktail) %>

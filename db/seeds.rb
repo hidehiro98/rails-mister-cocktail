@@ -10,6 +10,11 @@ Ingredient.destroy_all
 lemon = Ingredient.create(name: "lemon")
 ice = Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "whisky")
+Ingredient.create(name: "ram")
+Ingredient.create(name: "water")
+Ingredient.create(name: "gin")
 puts "Created the ingredients!"
 
 Cocktail.destroy_all
