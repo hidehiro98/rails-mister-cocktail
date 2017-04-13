@@ -26,6 +26,9 @@ gem 'carrierwave'
 gem 'devise'
 gem 'omniauth-facebook'
 
+#Mailing
+gem "letter_opener", group: :development
+
 # geo coding
 gem "geocoder"
 gem "coffee-rails"
