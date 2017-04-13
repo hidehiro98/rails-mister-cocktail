@@ -33,7 +33,10 @@
     <div class="navbar-wagon-item">
       <div class="dropdown">
         <%# avatar_url = current_user.facebook_picture_url || "http://placehold.it/30x30" %>
-        <%= image_tag user_avatar_url(current_user), class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <% if user_signed_in? %>
+          <%= image_tag user_avatar_url(current_user), class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <% end %>
+
 
         <!-- <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown"> -->
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
