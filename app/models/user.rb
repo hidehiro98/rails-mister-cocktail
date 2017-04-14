@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   after_create :send_welcome_mail
 
-  # test5
+  # test6
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
