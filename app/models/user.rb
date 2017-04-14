@@ -1,8 +1,7 @@
 class User < ApplicationRecord
   after_create :send_welcome_mail
 
-  # test in for git
-  # test for marge master to branch
+  # test3
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
