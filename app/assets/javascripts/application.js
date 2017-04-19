@@ -16,4 +16,5 @@
 //= require bootstrap-sprockets
 //= require underscore
 //= require gmaps/google
-//= require_tree .
+//= require active_admin
+//= require_tree ./app
