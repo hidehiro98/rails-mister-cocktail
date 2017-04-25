@@ -1,0 +1,7 @@
+ja:
+  hello: 'こんにちわ'
+  home:
+    welocme: 'ようこそ！'
+  cocktails:
+    index:
+      title: "カクテルリスト"

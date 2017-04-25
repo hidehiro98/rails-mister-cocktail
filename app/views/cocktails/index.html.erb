@@ -14,6 +14,16 @@
   <%= link_to 'Please log in', new_user_session_path %>
 <% end %>
 
+<div>
+  <%= t('hello') %>
+</div>
+<div>
+  <%= t('home.welcome') %>
+</div>
+<div>
+  <%= t('.title') %>
+</div>
+
 <table>
   <% @cocktails.each do |cocktail| %>
     <tr>

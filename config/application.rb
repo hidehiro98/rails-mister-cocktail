@@ -23,3 +23,5 @@ module RailsMisterCocktail
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+config.i18n.default_locale = :en

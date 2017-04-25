@@ -6,8 +6,8 @@ module UsersHelper
       else
         "http://placehold.it/30x30"
       end
-    else
-      "http://placehold.it/30x30"
+    # else
+    #   "http://placehold.it/30x30"
     # end
   end
 end

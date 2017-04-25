@@ -12,6 +12,14 @@ Rails.application.routes.draw do
 
   resources :doses, only: [:destroy]
 
+
+  scope '(:locale)', locale: /ja/ do
+    root to: 'pages#home'
+    resources :cocktails
+
+    # [...]
+  end
+
   # for my try
   # get 'doses/new2', to: 'dose#new2'
 end

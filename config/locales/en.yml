@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  home:
+    welcome: 'welcome here!'
+  cocktails:
+    index:
+      title: "List of Cocktails"
