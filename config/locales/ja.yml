@@ -1,7 +1,7 @@
 ja:
   hello: 'こんにちわ'
   home:
-    welocme: 'ようこそ！'
+    welcome: 'ようこそ、%{name}さん！'
   cocktails:
     index:
       title: "カクテルリスト"

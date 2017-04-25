@@ -18,11 +18,12 @@
   <%= t('hello') %>
 </div>
 <div>
-  <%= t('home.welcome') %>
+  <%= t('home.welcome', name: current_user.first_name) %>
 </div>
 <div>
   <%= t('.title') %>
 </div>
+
 
 <table>
   <% @cocktails.each do |cocktail| %>
