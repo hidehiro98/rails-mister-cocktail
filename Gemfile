@@ -26,6 +26,9 @@ gem 'carrierwave'
 gem 'devise'
 gem 'omniauth-facebook'
 
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+
 #Mailing
 gem "letter_opener", group: :development
 
