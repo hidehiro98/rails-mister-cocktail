@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   after_create :send_welcome_mail
 
-  # test6
+  # I'm on marged master
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

@@ -1,0 +1,7 @@
+ja:
+  hello: 'こんにちわ'
+  home:
+    welcome: 'ようこそ、%{name}さん！'
+  cocktails:
+    index:
+      title: "カクテルリスト"

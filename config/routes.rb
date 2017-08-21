@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # binding.pry
+  ActiveAdmin.routes(self)
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
@@ -8,6 +11,14 @@ Rails.application.routes.draw do
   end
 
   resources :doses, only: [:destroy]
+
+
+  scope '(:locale)', locale: /ja/ do
+    root to: 'pages#home'
+    resources :cocktails
+
+    # [...]
+  end
 
   # for my try
   # get 'doses/new2', to: 'dose#new2'
