@@ -2,10 +2,10 @@ ruby '2.3.3'
 
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
+# git_source(:github) do |repo_name|
+#   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+#   "https://github.com/#{repo_name}.git"
+# end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -20,7 +20,10 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
-gem 'figaro'
+
+# gem 'figaro'
+gem 'dotenv-rails'
+
 gem 'cloudinary'
 gem 'carrierwave'
 gem 'devise'
@@ -35,8 +38,11 @@ gem "coffee-rails"
 gem "gmaps4rails"
 
 # activeadmin
-gem 'activeadmin', github: 'activeadmin/activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+# gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'activeadmin'
+
+# gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'inherited_resources'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
@@ -84,7 +90,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
