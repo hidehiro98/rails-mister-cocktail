@@ -47,6 +47,7 @@ gem 'inherited_resources'
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
 end
+gem 'underscore-rails'
 
 # Assets
 # Use SCSS for stylesheets
