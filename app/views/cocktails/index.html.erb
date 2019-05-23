@@ -18,7 +18,9 @@
   <%= t('hello') %>
 </div>
 <div>
-  <%= t('home.welcome', name: current_user.first_name) %>
+  <% if user_signed_in? %>
+    <%= t('home.welcome', name: current_user.first_name) %>
+  <% end %>
 </div>
 <div>
   <%= t('.title') %>
